@@ -212,7 +212,7 @@ nav {
     .splashWrapper h4 {
         font-size: 1rem;
     }
-    }
+}
 
 @media screen and (min-width: 1025px) {
 .displayColumn {
@@ -512,6 +512,41 @@ footer {
 }
 
 /* About */
+
+@media screen and (min-width: 1025px) {
+    .aboutWrapper {
+        display: grid;
+        grid-template-columns: 2fr auto 1fr 2fr;
+        padding: 30px 30px 40px;
+    }
+    }
+
+@media screen and (max-width: 1024px) {
+    .aboutWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .aboutWrapper img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .aboutWrapper h1 {
+        font-size: 1.75rem;
+    }
+
+    .aboutWrapper h2 {
+        font-size: 1.5rem;
+    }
+
+    .aboutWrapper h4 {
+        font-size: 1rem;
+    }
+}
 
 /* Resume */
 
