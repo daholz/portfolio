@@ -10,32 +10,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="Assets/Images/favicon.png">
-    <title>Daniel Holzschuh - Resume</title>
+    <link rel="icon" type="image/png" href="./Assets/favicon.png">
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <title>Resume</title>
 </head>
 <body id="app">
     <a name="resumeTop"></a>
     <header>
         <nav>
-            <div>
-                <a href="./index.html"><img src="./Assets/Logo.png" class="logo"></a>
+            <!--Desktop Navigation-->
+            <div class="bigNav">
+                <div>
+                    <a href="./index.html"><img src="./Assets/Logo.png" class="logo"></a>
+                </div>
+                <div class="navLinkBlock">
+                    <a href="./case-studies.html" class="navLink">Case Studies</a>
+                    <a href="./about.html" class="navLink">About</a>
+                    <a href="./resume.html" class="navLink">Resume</a>
+                </div>
+                <div class="spacer">
+                </div>
+                <div>
+                    <a href="mailto:d.a.holzschuh@gmail.com"><img src="./Assets/Email Logo.png" alt="email icon" class="iconLink"></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/daniel-holzschuh/"><img src="./Assets/Linkedin Logo.png" alt="linkedin logo" class="iconLink"></a>
+                </div>
             </div>
-            <div>
-                <a href="./case-studies.html" class="navLink">Case Studies</a>
-            </div>
-            <div>
-                <a href="./about.html" class="navLink">About</a>
-            </div>
-            <div>
-                <a href="./resume.html" class="navLink">Resume</a>
-            </div>
-            <div class="spacer">
-            </div>
-            <div>
-                <img src="./Assets/Email Logo.png" class="iconLink">
-            </div>
-            <div>
-                <img src="./Assets/Linkedin Logo.png" class="iconLink">
+            
+            <!--Mobile Navigation-->
+            <div class="mobileNav">
+                <div>
+                    <a href="./index.html"><img src="./Assets/Logo.png" class="logo"></a>
+                </div>
+                <div class="spacer"></div>
+                <div>
+                    <a href="mailto:d.a.holzschuh@gmail.com"><img src="./Assets/Email Logo.png" alt="email icon" class="iconLink"></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/daniel-holzschuh/"><img src="./Assets/Linkedin Logo.png" alt="linkedin logo" class="iconLink"></a>
+                </div>
+                <div class="dropdownMenu" onclick="expandMenu()">
+                    <div class="menuButton">
+                        <div class="menuBtnStripe"></div>
+                        <div class="menuBtnStripe"></div>
+                        <div class="menuBtnStripe"></div>
+                    </div>
+                    <div class="menuPopUp" id="menuLinks">
+                        <a href="./case-studies.html" class="menuLink">Case Studies</a>
+                        <a href="./about.html" class="menuLink">About</a>
+                        <a href="./resume.html" class="menuLink">Resume</a>
+                    </div>
+                </div>
+                
             </div>
         </nav>
     </header>

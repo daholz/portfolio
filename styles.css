@@ -6,7 +6,8 @@
     --teal: #339097;
     --blue: #277c99;
     --dark-teal: #288086;
-    --darkest-gray: #323537;
+    --light-teal: #cae1e2;
+    --darkest-gray: #020202;
     --dark-gray: #777777;
     --med-gray: #bbbbbb;
     --light-gray: #e6e6ea;
@@ -699,43 +700,20 @@ footer {
     padding: 15px;
 }
 
-@media screen and (min-width: 1025px){
-    .skillButton {
-        background: var(--white);
-        color: var(--darkest-gray);
-        padding: 10px 20px;
-        margin: 5px;
-        border: 2px solid var(--med-gray);
-        border-radius: 30px;
-        font-size: 1rem;
-    }
-
-    .skillButton:hover {
-        background: var(--white);
-        color: var(--darkest-gray);
-        padding: 10px 20px;
-        margin: 5px;
-        border: 2px solid var(--med-gray);
-        border-radius: 30px;
-        font-size: 1rem;
-    }
+.skillButton {
+    color: var(--darkest-gray);
+    font-size: 1rem;
+    border: none;
+    background: var(--light-teal);
+    padding: 5px 7px;
+    margin: 3px 1px;
+    font-weight: 500;
 }
 
-@media screen and (max-width: 1024px){
-    .skillButton {
-        color: var(--darkest-gray);
-        font-size: 1rem;
-        border: none;
-        background: var(--white);
-        padding: 5px 7px;
-        margin: 5px;
-    }
-
-    .skillButton:hover {
-        color: var(--darkest-gray);
-        font-size: 1rem;
-        background: var(--white);
-    }
+.skillButton:hover {
+    color: var(--darkest-gray);
+    font-size: 1rem;
+    background: var(--med-gray);
 }
 
 /* Case Studies */
