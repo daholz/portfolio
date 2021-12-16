@@ -144,15 +144,35 @@ b {
     margin: auto;
 }
 
-.pageTitle {
-    display: inline-block;
+@media screen and (min-width: 1025px) {
+    .pageTitle {
+        display: inline-block;
 
-    background: var(--white);
-    border: var(--main-border);
-    box-shadow: var(--dropshadow);
-    padding: 10px 30px;
-    margin: 20px auto;
-    text-transform: uppercase;
+        background: var(--white);
+        border: var(--main-border);
+        box-shadow: var(--dropshadow);
+        padding: 10px 30px;
+        margin: 20px auto;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pageTitle {
+        display: inline-block;
+
+        background: var(--white);
+        border: var(--main-border);
+        box-shadow: var(--dropshadow);
+        padding: 5px 20px;
+        margin: 20px auto;
+        text-transform: uppercase;
+        
+    }
+
+    .pageTitle H1 {
+        font-size: 1.5rem;
+    }
 }
 
 .closeButton {
@@ -237,24 +257,12 @@ b {
     }
 }
 
-@media screen and (min-width: 1025px) {
 .displayColumn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-}
-
-@media screen and (max-width: 1024px) {
-    .displayColumn {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    }
 
 .displayRow {
     display: flex;
@@ -262,8 +270,16 @@ b {
     align-items: flex-start;
 }
 
-.displayPadding {
-    padding: 40px;
+@media screen and (min-width: 1025px) {
+    .displayPadding {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .displayPadding {
+        padding: 40px 0px;
+    }
 }
 
 .content {
@@ -350,13 +366,26 @@ footer {
     object-fit: cover;
 }
 
-.roundImgLg {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border: var(--main-border);
-    border-radius: 50%;
-    margin: 10px;
+@media screen and (min-width: 1025px){
+    .roundImgLg {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border: var(--main-border);
+        border-radius: 50%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .roundImgLg {
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        border: var(--main-border);
+        border-radius: 50%;
+        margin: 10px;
+    }
 }
 
 .roundImgMd {
@@ -718,17 +747,49 @@ footer {
 
 /* Case Studies */
 
+@media screen and (max-width: 1024px) {
+    .csOverviewMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 10px 0px 30px 0px;
+        box-shadow: var(--dropshadow);
+        border: var(--main-border);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .csContentMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .csOverview {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.csContent {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 40px;
+@media screen and (min-width: 1025px){
+    .csContent {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .csContent {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
 }
 
 .csImageBlock {
@@ -740,16 +801,33 @@ footer {
     margin: auto 0px;
 }
 
-.pullQuote {
-    border: var(--main-border);
-    box-shadow: var(--dropshadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 50px;
-    margin: 3rem;
-    background: var(--white);
-    width: 30%;
+@media screen and (min-width: 1025px){
+    .pullQuote {
+        border: var(--main-border);
+        box-shadow: var(--dropshadow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 50px;
+        margin: 3rem;
+        background: var(--white);
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .pullQuote {
+        border: var(--main-border);
+        box-shadow: var(--dropshadow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+        background: var(--white);
+        width: 80%;
+        max-width: 500px;
+        margin: 30px 0px;
+    }
 }
 
 /* Image Overlay */
