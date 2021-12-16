@@ -171,18 +171,40 @@ b {
 }
 
 .closeButton:hover {
-    color: var(--darkest-gray);
-    background: rgba(0, 0, 0, .0);
+    color: var(--dark-pink);
+    border: 2px solid var(--dark-pink);
+    background: var(--white-gradient);
 }
 
 /* Templates */
 
-nav {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background: var(--white);
-    border-bottom: var(--main-border);
+@media screen and (min-width: 1025px) {
+    .mobileNav {
+        display: none;
+    }
+
+    .bigNav {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background: var(--white);
+        border-bottom: var(--main-border);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mobileNav {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        align-items: center;
+        background: var(--white);
+        border-bottom: var(--main-border);
+    }
+
+    .bigNav {
+        display: none;
+    }
 }
 
 
@@ -372,6 +394,67 @@ footer {
 
 .navLink:hover {
     color: var(--dark-pink);
+}
+
+.menuLink {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--darkest-gray);
+}
+
+.menuLink:hover {
+    color: var(--dark-pink);
+}
+
+.menuButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+    background: var(--white);
+    border: var(--main-border);
+    border-radius: 50%;
+
+    margin-left: auto;
+}
+
+.menuBtnStripe {
+    
+    height: 4px;
+    width: 20px;
+    background: var(--darkest-gray);
+    border-radius: 2px;
+    margin: 3px;
+}
+
+.dropdownMenu {
+    margin-left: 10px;
+}
+
+.dropdownMenu .menuPopUp {
+    visibility: hidden;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 30px;
+
+    background: var(--white);
+    border: var(--main-border);
+}
+
+.dropdownMenu .show {
+    visibility: visible;
 }
 
 /* Splash */
