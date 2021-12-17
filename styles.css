@@ -88,6 +88,7 @@ p {
     font-weight: 500;
     padding: 10px 0px;
     font-size: 1rem;
+    text-transform: none;
 }
 
 ul {
@@ -272,13 +273,13 @@ b {
 
 @media screen and (min-width: 1025px) {
     .displayPadding {
-        padding: 40px;
+        padding: 20px 40px;
     }
 }
 
 @media screen and (max-width: 1024px){
     .displayPadding {
-        padding: 40px 0px;
+        padding: 20px 0px;
     }
 }
 
