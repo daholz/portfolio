@@ -200,7 +200,7 @@ b {
 
 /* Templates */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 790px) {
     .mobileNav {
         display: none;
     }
@@ -214,7 +214,7 @@ b {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 789px) {
     .mobileNav {
         display: flex;
         align-items: center;
