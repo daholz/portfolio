@@ -497,6 +497,7 @@ footer {
 .dropdownMenu .menuPopUp {
     visibility: hidden;
     position: absolute;
+    z-index: 1;
     top: 75px;
     right: 0px;
     height: 125px;
@@ -686,6 +687,27 @@ footer {
     .aboutWrapper h4 {
         font-size: 1rem;
     }
+}
+
+.aboutImgContainer {
+    position: relative;
+    text-align: center;
+    width: 424px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.aboutImgContainer:hover {
+    transform: rotateY(180deg);
 }
 
 /* Resume */
