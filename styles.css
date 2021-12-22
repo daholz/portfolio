@@ -712,6 +712,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .back {
+        display: none;
+    }
+}
+
 /* Resume */
 
 @media screen and (min-width: 1025px){
