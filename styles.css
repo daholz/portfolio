@@ -689,25 +689,27 @@ footer {
     }
 }
 
-.aboutImgContainer {
-    position: relative;
-    text-align: center;
-    width: 424px;
-    transform-style: preserve-3d;
-    transition: transform 1s ease-in-out;
-}
-
-.front, .back {
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.back {
-    transform: rotateY(180deg);
-}
-
-.aboutImgContainer:hover {
-    transform: rotateY(180deg);
+@media screen and (min-width: 1025px) {
+    .aboutImgContainer {
+        position: relative;
+        text-align: center;
+        width: 424px;
+        transform-style: preserve-3d;
+        transition: transform 1s ease-in-out;
+    }
+    
+    .front, .back {
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    
+    .back {
+        transform: rotateY(180deg);
+    }
+    
+    .aboutImgContainer:hover {
+        transform: rotateY(180deg);
+    }
 }
 
 /* Resume */
